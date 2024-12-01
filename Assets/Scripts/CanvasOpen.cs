@@ -4,17 +4,11 @@ using UnityEngine;
 
 public class CanvasOpen : MonoBehaviour
 {
-    private GameObject activeCanvas;
-    public GameObject previousCanvas;
+    [SerializeField] private GameObject activeCanvas;
 
-    public void ChangeCanvasTo(GameObject canvas)
+    public void ChangeCanvasTo(GameObject canvasToActivate)
     {
-        if(activeCanvas != null)
-        {
-            activeCanvas.SetActive(false);
-        }
-
-        activeCanvas = canvas;
-        activeCanvas.SetActive(true);
+        CanvasManager.Instance.OpenCanvas(canvasToActivate);
     }
+
 }
