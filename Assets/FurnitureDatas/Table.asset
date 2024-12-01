@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 045163b6e48be3c4c80d2e9de60c74e6, type: 3}
+  m_Name: Table
+  m_EditorClassIdentifier: 
+  furniturName: Table
+  introduction: "Reference\nTo assemble the chair, you will need a bit driver. It
+    is included in the TRIXIG 15-piece tool set (sold separately).\n\nMaterials and
+    Management\n\nsubject matter\r\nBasic materials:\r                          
+    Wood, adhesive\r\nsheet:\r            Fiberboard\r\nAll parts: Acrylic paint\n\r\nProduct
+    Management\r\nPlease clean with diluted water and neutral detergent.\r\n\r\nWipe
+    off any moisture with a clean cloth.\r\n\r\nFor stability, check the screws after
+    two weeks of assembly and retighten if necessary.\n"
+  furnitureImage: {fileID: 919132149155446097, guid: 2b07cc3cdf036d74b98c7ca95b37f6b9, type: 3}
+  isUnlocked: 1
