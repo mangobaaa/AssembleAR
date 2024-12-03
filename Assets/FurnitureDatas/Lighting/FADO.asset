@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 045163b6e48be3c4c80d2e9de60c74e6, type: 3}
+  m_Name: FADO
+  m_EditorClassIdentifier: 
+  furniturName: FADO
+  introduction: "\uBD80\uB4DC\uB7FD\uACE0 \uC544\uB291\uD55C \uB290\uB08C\uC758 \uBD88\uBE5B\uC785\uB2C8\uB2E4."
+  matter: "\uBC1B\uCE68: \uD3F4\uB9AC\uD504\uB85C\uD544\uB80C \uD50C\uB77C\uC2A4\uD2F1\r\n\uAC13:
+    \uC720\uB9AC"
+  management: "\uBA3C\uC9C0\uB5A8\uC774\uB85C \uCCAD\uC18C\uD574\uC8FC\uC138\uC694."
+  furnitureImage: {fileID: 21300000, guid: df4507c7d65356848b5590b3e44441c7, type: 3}
+  detailfurnitureImage: {fileID: 21300000, guid: 676d7b73aaeb19140bfeb547e768a950, type: 3}
