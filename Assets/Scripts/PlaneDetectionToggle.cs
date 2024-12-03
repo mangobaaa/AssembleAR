@@ -10,22 +10,26 @@ using UnityEngine.XR.ARSubsystems;
 public class PlaneDetectionToggle : MonoBehaviour
 {
     private ARPlaneManager planeManager;
+    private SpawnObjectOnPlane spawnObjectOnPlane;
     [SerializeField]
     private TextMeshProUGUI toggleButtonText;
     
     private void Awake() {
         planeManager = GetComponent<ARPlaneManager>();
+        spawnObjectOnPlane = GetComponent<SpawnObjectOnPlane>();
     }
 
     public void TogglePlaneDetection() {
         planeManager.enabled = !planeManager.enabled;
-        string toggleButtonMessage = "바닥 감지";
+        spawnObjectOnPlane.CanChangePosition = planeManager.enabled;
 
-        if(planeManager.enabled ) {
-            toggleButtonMessage = "감지 중단";
+        string toggleButtonMessage = "배치 모드";
+
+        if (planeManager.enabled ) {
+            toggleButtonMessage = "조립 모드";
             SetAllPlanesActive(false);
         } else {
-            toggleButtonMessage = "바닥 감지";
+            toggleButtonMessage = "배치 모드";
             SetAllPlanesActive(true);
         }
 
