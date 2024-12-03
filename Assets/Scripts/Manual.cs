@@ -13,7 +13,7 @@ public class Manual : MonoBehaviour
 
     private SpriteRenderer spriteRenderer;
     private int index = 0;
-
+    
     public void Awake() {
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
