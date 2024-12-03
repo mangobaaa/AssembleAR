@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Microsoft.Unity.VisualStudio.Editor;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -11,10 +12,11 @@ public class Furniture : MonoBehaviour
     [SerializeField] TextMeshProUGUI furnitureMatter;
     [SerializeField] TextMeshProUGUI furnitureManagement;
     [SerializeField] FurniturSO furnitur;
-    [SerializeField] GameObject detailCanvas;
+    
 
     void Start(){
         furnitureName.text = furnitur.GetFurnitureName();
+        
     }
 
     public void OnClick()
