@@ -8389,6 +8389,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   placeablePrefab: {fileID: 3192561087854218129, guid: edc647b22e8574240af80197c46bfc3b, type: 3}
+  ManualCanvas: {fileID: 0}
 --- !u!114 &1828601342
 MonoBehaviour:
   m_ObjectHideFlags: 0

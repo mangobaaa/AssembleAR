@@ -19,7 +19,7 @@ public class SpawnObjectOnPlane : MonoBehaviour
 
     private void Awake() {
         raycastManager = GetComponent<ARRaycastManager>();
-        CanChangePosition = false;
+        CanChangePosition = true;
     }
 
     bool TryGetTouchPosition(out Vector2 touchPosition) {
@@ -34,8 +34,11 @@ public class SpawnObjectOnPlane : MonoBehaviour
 
     private void Update() {
         // Debug.Log(CanChangePosition);
+        if (!CanChangePosition) {
+            return;
+        }
 
-        if (!TryGetTouchPosition(out Vector2 touchPosition) || CanChangePosition) {
+        if (!TryGetTouchPosition(out Vector2 touchPosition)) {
             return;
         }
 
