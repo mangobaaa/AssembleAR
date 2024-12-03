@@ -15,7 +15,7 @@ public class SpawnObjectOnPlane : MonoBehaviour
 
     [SerializeField]
     private List<GameObject> placeablePrefab = new List<GameObject>();
-    private int index = 1;
+    private int index = 0;
 
     static List<ARRaycastHit> s_Hits = new List<ARRaycastHit>();
 

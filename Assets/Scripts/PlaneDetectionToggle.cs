@@ -27,7 +27,7 @@ public class PlaneDetectionToggle : MonoBehaviour
         string toggleButtonMessage = "";
 
         if (planeManager.enabled ) {
-            toggleButtonMessage = "조립 모드";
+            toggleButtonMessage = "사용 모드";
             spawnObjectOnPlane.CanChangePosition = false;
         } else {
             toggleButtonMessage = "배치 모드";
