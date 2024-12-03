@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 045163b6e48be3c4c80d2e9de60c74e6, type: 3}
+  m_Name: GURSKEN
+  m_EditorClassIdentifier: 
+  furniturName: GURSKEN
+  introduction: "\uC774 3\uB2E8 \uC11C\uB78D\uC7A5\uC5D0 \uC218\uAC74\uBD80\uD130
+    \uC758\uB958\uAE4C\uC9C0 \uBAA8\uB4E0 \uAC83\uC744 \uC218\uB0A9\uD574 \uBCF4\uC138\uC694.
+    \uADF8 \uC704\uC5D0 \uC804\uB4F1\uC774\uB098 \uAF43\uC744 \uB193\uC544 \uC7A5\uC2DD\uD574\uBCF4\uB294
+    \uAC74 \uC5B4\uB5A8\uAE4C\uC694?\r\n\r\n\uC9D1\uC740 \uC628 \uAC00\uC871\uC774
+    \uC548\uC804\uD558\uAC8C \uC0DD\uD65C\uD560 \uC218 \uC788\uB294 \uACF5\uAC04\uC774\uC5B4\uC57C
+    \uD569\uB2C8\uB2E4. \uB3D9\uBD09\uB41C \uBCBD \uACE0\uC815\uC7A5\uCE58 \uD0A4\uD2B8\uB97C
+    \uC0AC\uC6A9\uD574 \uBCBD\uC5D0 \uC11C\uB78D\uC7A5\uC744 \uB2E8\uB2E8\uD788 \uACE0\uC815\uD558\uC2DC\uAE30
+    \uBC14\uB78D\uB2C8\uB2E4."
+  matter: "\uC0C1\uB2E8 \uD328\uB110/ \uC0AC\uC774\uB4DC\uD328\uB110/ \uC11C\uB78D\uC55E\uD310:
+    \uD30C\uD2F0\uD074\uBCF4\uB4DC, \uC544\uD06C\uB9B4 \uD398\uC778\uD2B8, \uD50C\uB77C\uC2A4\uD2F1
+    \uD14C\uB450\uB9AC\r\n\uD558\uBD80\uBAB0\uB529: \uD30C\uD2F0\uD074\uBCF4\uB4DC,
+    \uD398\uC774\uD37C \uD3EC\uC77C\r\n\uB4B7\uB808\uC77C/ \uC11C\uB78D \uC606\uBA74/
+    \uC11C\uB78D \uB4B7\uBA74: \uD30C\uD2F0\uD074\uBCF4\uB4DC\r\n\uB4A4\uD310/ \uC11C\uB78D
+    \uBC11\uBA74: \uC12C\uC720\uD310"
+  management: "\uC21C\uD55C \uC138\uC81C\uC5D0 \uC801\uC2E0 \uCC9C\uC73C\uB85C \uB2E6\uC73C\uC138\uC694.\r\n\r\n\uAE68\uB057\uD55C
+    \uCC9C\uC73C\uB85C \uBB3C\uAE30\uB97C \uB2E6\uC544\uC8FC\uC138\uC694."
+  furnitureImage: {fileID: 21300000, guid: b00f9118af6e1224db752d91fd7311aa, type: 3}
+  detailfurnitureImage: {fileID: 21300000, guid: efb6a028d3fc58b43a3564a4454b1e4f, type: 3}
