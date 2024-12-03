@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CanvasOpen : MonoBehaviour
 {
-    [SerializeField] private GameObject activeCanvas;
+    // [SerializeField] private GameObject activeCanvas;
 
     public void ChangeCanvasTo(GameObject canvasToActivate)
     {

@@ -49,6 +49,9 @@ public class SpawnObjectOnPlane : MonoBehaviour
 
     public void SetPrefabType(GameObject prefabType) {
         placeablePrefab = prefabType;
+    }
 
+    public GameObject getObject() {
+        return spawnedObject;
     }
 }
