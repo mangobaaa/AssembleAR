@@ -10,11 +10,12 @@ public class SpawnObjectOnPlane : MonoBehaviour
 {
     private ARRaycastManager raycastManager;
     private GameObject spawnedObject;
+
     public bool CanChangePosition { get; set; }
 
     [SerializeField]
-    private GameObject placeablePrefab;
-
+    private List<GameObject> placeablePrefab = new List<GameObject>();
+    private int index = 1;
 
     static List<ARRaycastHit> s_Hits = new List<ARRaycastHit>();
 
@@ -34,6 +35,8 @@ public class SpawnObjectOnPlane : MonoBehaviour
     }
 
     private void Update() {
+        Debug.Log(index);
+
         if (!CanChangePosition) {
             return;
         }
@@ -45,7 +48,7 @@ public class SpawnObjectOnPlane : MonoBehaviour
         if (raycastManager.Raycast(touchPosition, s_Hits, TrackableType.PlaneWithinPolygon)) {
             var hitPose = s_Hits[0].pose;
             if (spawnedObject == null) {
-                spawnedObject = Instantiate(placeablePrefab, hitPose.position, hitPose.rotation);
+                spawnedObject = Instantiate(placeablePrefab[index], hitPose.position, hitPose.rotation);
             }
             else {
                 spawnedObject.transform.position = hitPose.position;
@@ -54,9 +57,8 @@ public class SpawnObjectOnPlane : MonoBehaviour
         }
     }
 
-    public void SetPrefabType(GameObject prefabType) {
-        placeablePrefab = prefabType;
+    public void SetPrefabType(int prefabType) {
+        index = prefabType;
     }
-
 
 }
