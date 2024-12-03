@@ -14,7 +14,8 @@ public class FurniturSO : ScriptableObject {
     [TextArea(2,6)]
     [SerializeField] string management ="제품 관리";
     [SerializeField] Sprite furnitureImage;
-    [SerializeField] bool isUnlocked;
+    [SerializeField] Sprite detailfurnitureImage;
+
 
     public string GetFurnitureName(){
         return furniturName;
@@ -22,6 +23,10 @@ public class FurniturSO : ScriptableObject {
 
     public Sprite GetFurnitureImage(){
         return furnitureImage;
+    }
+
+    public Sprite GetDetailFurnitureImage(){
+        return detailfurnitureImage;
     }
 
     public string GetFurnitureIntroduction(){
