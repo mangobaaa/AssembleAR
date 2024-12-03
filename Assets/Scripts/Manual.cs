@@ -7,9 +7,10 @@ public class Manual : MonoBehaviour
 {
     [SerializeField]
     private Sprite[] m_Sprites;
-
     [SerializeField]
     private GameObject sliderObject;
+    [SerializeField]
+    private GameObject CompleteButton;
 
     private SpriteRenderer spriteRenderer;
     private int index = 0;
@@ -22,6 +23,13 @@ public class Manual : MonoBehaviour
         spriteRenderer.sprite = m_Sprites[index];
         Slider slider = sliderObject.GetComponent<Slider>();
         slider.value = index;
+
+
+        if(index == 7) {
+            CompleteButton.SetActive(true);
+        } else {
+            CompleteButton.SetActive(false);
+        }
     }
 
     public void NextPage() {
@@ -40,4 +48,7 @@ public class Manual : MonoBehaviour
         index--;
     }
 
+    public void destroySelf() {
+        Destroy(this.gameObject); 
+    }
 }

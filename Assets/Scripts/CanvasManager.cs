@@ -10,7 +10,7 @@ public class CanvasManager : MonoBehaviour
 
     void Start()
     {
-        GameObject mainCanvas = GameObject.Find("MainCanvas"); 
+        GameObject mainCanvas = GameObject.Find("MainMenu"); 
         if (mainCanvas != null)
         {
             canvasStack.Push(mainCanvas); // 스택에 추가

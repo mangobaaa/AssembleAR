@@ -24,20 +24,24 @@ public class PlaneDetectionToggle : MonoBehaviour
         planeManager.enabled = !planeManager.enabled;
         // spawnObjectOnPlane.CanChangePosition = planeManager.enabled;
 
-        string toggleButtonMessage = "배치 모드";
+        string toggleButtonMessage = "";
 
         if (planeManager.enabled ) {
             toggleButtonMessage = "조립 모드";
             spawnObjectOnPlane.CanChangePosition = false;
-            SetAllPlanesActive(false);
         } else {
             toggleButtonMessage = "배치 모드";
             spawnObjectOnPlane.CanChangePosition = true;
-            SetAllPlanesActive(true);
         }
-
         toggleButtonText.text = toggleButtonMessage;
+    }
 
+    private void Update() {
+        if(spawnObjectOnPlane.CanChangePosition) {
+            SetAllPlanesActive(true);
+        } else {
+            SetAllPlanesActive(false);
+        }
     }
 
     private void SetAllPlanesActive(bool value) {

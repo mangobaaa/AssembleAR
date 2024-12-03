@@ -15,13 +15,14 @@ public class SpawnObjectOnPlane : MonoBehaviour
     [SerializeField]
     private GameObject placeablePrefab;
 
+
     static List<ARRaycastHit> s_Hits = new List<ARRaycastHit>();
 
     private void Awake() {
         raycastManager = GetComponent<ARRaycastManager>();
-        CanChangePosition = true;
+        CanChangePosition = false;
     }
-
+    
     bool TryGetTouchPosition(out Vector2 touchPosition) {
         if (Input.touchCount > 0) {
             touchPosition = Input.GetTouch(0).position;
@@ -33,7 +34,6 @@ public class SpawnObjectOnPlane : MonoBehaviour
     }
 
     private void Update() {
-        // Debug.Log(CanChangePosition);
         if (!CanChangePosition) {
             return;
         }
@@ -54,7 +54,9 @@ public class SpawnObjectOnPlane : MonoBehaviour
         }
     }
 
-    public GameObject getObject() {
-        return spawnedObject;
+    public void SetPrefabType(GameObject prefabType) {
+        placeablePrefab = prefabType;
     }
+
+
 }
