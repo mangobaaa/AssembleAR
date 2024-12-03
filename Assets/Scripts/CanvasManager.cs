@@ -8,6 +8,14 @@ public class CanvasManager : MonoBehaviour
 
     private Stack<GameObject> canvasStack = new Stack<GameObject>(); // 캔버스 스택
 
+    void Start()
+    {
+        GameObject mainCanvas = GameObject.Find("MainCanvas"); 
+        if (mainCanvas != null)
+        {
+            canvasStack.Push(mainCanvas); // 스택에 추가
+        }
+    }
     void Awake()
     {
         if (Instance == null)
