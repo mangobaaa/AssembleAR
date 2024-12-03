@@ -7,10 +7,14 @@ public class Manual : MonoBehaviour
     [SerializeField]
     private Sprite[] m_Sprites;
     private SpriteRenderer spriteRenderer;
-    private int index = 0;
+    private int index = 4;
+
+    public void Awake() {
+        spriteRenderer = GetComponent<SpriteRenderer>();
+    }
 
     public void Update() {
-        
+        spriteRenderer.sprite = m_Sprites[index];
     }
 
     public void NextPage() {
