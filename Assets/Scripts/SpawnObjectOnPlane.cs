@@ -33,7 +33,7 @@ public class SpawnObjectOnPlane : MonoBehaviour
     }
 
     private void Update() {
-        Debug.Log(CanChangePosition);
+        // Debug.Log(CanChangePosition);
 
         if (!TryGetTouchPosition(out Vector2 touchPosition) || CanChangePosition) {
             return;
