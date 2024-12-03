@@ -11,9 +11,10 @@ public class PlaneDetectionToggle : MonoBehaviour
 {
     private ARPlaneManager planeManager;
     private SpawnObjectOnPlane spawnObjectOnPlane;
+
     [SerializeField]
     private TextMeshProUGUI toggleButtonText;
-    
+
     private void Awake() {
         planeManager = GetComponent<ARPlaneManager>();
         spawnObjectOnPlane = GetComponent<SpawnObjectOnPlane>();
@@ -21,15 +22,17 @@ public class PlaneDetectionToggle : MonoBehaviour
 
     public void TogglePlaneDetection() {
         planeManager.enabled = !planeManager.enabled;
-        spawnObjectOnPlane.CanChangePosition = planeManager.enabled;
+        // spawnObjectOnPlane.CanChangePosition = planeManager.enabled;
 
         string toggleButtonMessage = "배치 모드";
 
         if (planeManager.enabled ) {
             toggleButtonMessage = "조립 모드";
+            spawnObjectOnPlane.CanChangePosition = false;
             SetAllPlanesActive(false);
         } else {
             toggleButtonMessage = "배치 모드";
+            spawnObjectOnPlane.CanChangePosition = true;
             SetAllPlanesActive(true);
         }
 
